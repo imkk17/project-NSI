@@ -12,7 +12,7 @@ def load_pokemon_data() -> pd.DataFrame:
 def search_pokemon(df: pd.DataFrame, query: str) -> pd.DataFrame:
     """Recherche des Pokémon correspondant à la requête."""
     if not query:
-        return pd.DataFrame()
+        return pd.DataFrame
     
     # Essayer d'abord la recherche par numéro
     try:
